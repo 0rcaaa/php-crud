@@ -6,5 +6,8 @@
   "scripts": {
     "dev": "tailwindcss -i ./main/src/css/input.css -o ./main/src/css/output.css --watch",
     "build": "tailwindcss build -i ./main/src/css/input.css -o ./main/src/css/output.css"
+  },
+  "dependencies": {
+    "flowbite": "^2.5.1"
   }
 }

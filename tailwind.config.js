@@ -2,8 +2,9 @@
 module.exports = {
   content: [
     "./main/**/*.{html, php, js}",
-    "./main/src/*.php",
-    "./main/layout/*.php"
+    "./main/src/views/**/*.php",
+    "./main/layout/*.php",
+     "./node_modules/flowbite/**/*.js"
   ],
   theme: {
     fontFamily :{
