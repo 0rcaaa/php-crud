@@ -1,9 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+
+  darkMode:'selector',
+  
   content: [
     "./main/**/*.{html, php, js}",
-    "./main/src/views/**/*.php",
-    "./main/layout/*.php",
+    "./main/src/views/admin/*.php",
+    "./main/src/views/user/*.php",
+    "./main/layout/*.{html, php, js}",
+    "./main/src/service/*.php",
      "./node_modules/flowbite/**/*.js"
   ],
   theme: {
@@ -13,7 +18,8 @@ module.exports = {
     extend: {},
   },
   plugins: [
-    require('daisyui')
+    require('daisyui'),
+    require('flowbite/plugin')
   ],
 };
 

@@ -24,6 +24,7 @@
                 <th class="p-3">Phone</th>
                 <th class="p-3">Address</th>
                 <th class="p-3">Create_At</th>
+                <th class="p-3">Updated_At</th>
                 <th class="p-3">Action</th>
             </tr>
         </thead>
@@ -46,12 +47,13 @@ while ($row = $result->fetch_assoc()) {
         <td class='border-t-2 border-white'>$row[phone]</td>
         <td class='border-t-2 border-white'>$row[address]</td>
         <td class='border-t-2 border-white'>$row[create_at]</td>
+        <td class='border-t-2 border-white'>$row[updated_at]</td>
         <td class='border-t-2 border-white'>
             <a class='btn btn-outline btn-info m-3' href='edit.php?id=$row[id]'>Edit</a>
             <!-- You can open the modal using ID.showModal() method -->
-            <button class='btn' onclick='my_modal_3.showModal()'>open modal</button>
-            <dialog id='my_modal_3' class='modal'>
-            <div class='modal-box'>
+            <button class='btn btn-outline btn-error m-3' onclick='my_modal_3.showModal()'>Delete</button>
+            <dialog id='my_modal_3' class='modal 0'>
+            <div class='modal-box '>
                 <form method='dialog'>
                 <button class='btn btn-sm btn-circle btn-ghost absolute right-2 top-2'>✕</button>
                 </form>
