@@ -90,14 +90,15 @@ session_start();
   </div>
 </nav>
 
-<section id="hero">
-  <div id="main" class="relative flex flex-col content-center justify-center items-center   text-white drop-shadow-2xl rounded-md h-[75%] w-[75%] mx-auto mt-11 bg-cover bg-no-repeat ">
-    
-    <img src="../../assets/logo71.png" class=" relative h-[35%] w-[25%]" alt="">
-    <h1 class="">SMKN 71 Jakarta</h1>
-    <p>Unggul dalam Mutu, Teladan Berperilaku</p>
 
-  </div>
+<section class="flex">
+    <div>
+        <img class="max-w-[10%]" src="../../assets/dummy_pp.jpeg" alt="">
+        <p>jabatan</p>
+        <h1>nama</h1>
+    </div>
+
+
 </section>
 
 

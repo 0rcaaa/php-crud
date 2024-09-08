@@ -1,25 +1,22 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-
-  darkMode:'selector',
-  
   content: [
-    "./main/**/*.{html, php, js}",
-    "./main/src/views/admin/*.php",
-    "./main/src/views/user/*.php",
-    "./main/layout/*.{html, php, js}",
-    "./main/src/service/*.php",
-     "./node_modules/flowbite/**/*.js"
+    './main/src/views/**/*.{html,js,php}',
+    './main/layout/*.{php,html}',
+    './main/src/service/*.php',
+
   ],
   theme: {
-    fontFamily :{
-      'ubuntu':['ubuntu','sans-serif']
+    ontFamily :{
+      'ubuntu':['Ubuntu','Sans-Serif']},
+    extend: {
+      'hero': "url('./main/src/assets/Gedung-Sekolah-2.jpg')",
     },
-    extend: {},
   },
   plugins: [
     require('daisyui'),
-    require('flowbite/plugin')
+    require('flowbite/plugin'),
   ],
-};
+  darkMode : 'selector',
+}
 

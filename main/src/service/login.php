@@ -21,6 +21,7 @@ if (isset($_POST['submit'])) {
         $row = mysqli_fetch_assoc($result);
         $_SESSION['username'] = $row['username'];
         $_SESSION['role'] = $row['role'];
+        $_SESSION['email'] = $row['email'];
 
         
         switch($_SESSION['role']){
