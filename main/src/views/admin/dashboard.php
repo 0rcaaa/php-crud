@@ -54,7 +54,7 @@ if (isset($_SESSION['username']) == false) {
                     <div class="sb-sidenav-menu">
                         <div class="nav">
                             <div class="sb-sidenav-menu-heading">Core</div>
-                            <a class="nav-link" href="../views/admin/main.php">
+                            <a class="nav-link" href="../views/user/dashboard.php">
                                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                                 Landing Page
                             </a>

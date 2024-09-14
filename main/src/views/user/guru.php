@@ -10,7 +10,7 @@ session_start();
     <link rel="stylesheet" href="../../css/output.css">
     <link rel="stylesheet" href="../../css/input.css">
 </head>
-<body class="h-[100vh]">
+<body>
 
 
 
@@ -39,7 +39,7 @@ session_start();
             <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Settings</a>
           </li>
           <li>
-            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
+            <a href="../../service/logout.php" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
           </li>
         </ul>
       </div>
@@ -53,7 +53,7 @@ session_start();
   <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-user">
     <ul class="flex flex-col text-xl font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
       <li>
-        <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" aria-current="page">Home</a>
+        <a href="./homepage.php" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" aria-current="page">Home</a>
       </li>
       <li>
         <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Ekskul</a>
@@ -91,220 +91,239 @@ session_start();
 </nav>
 
 
-<section>
-    <div class="flex justify-center mt-9">
-        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <a href="#">
-                <img class="rounded-t-lg " src="../../assets/dummy_pp.jpeg" alt="" />
-            </a>
-            <div class="p-5">
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Kepala Sekolah</p>
-                <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-                </a>
-            </div>
-        </div>
+<section class="flex flex-col flex-nowrap content-around items-center text-center">
+
+
+    <div style=" margin-top:5rem;">
+        <img style="width: 15rem; height:15rem;" class="rounded-full" src="../../assets/palambas.jpg" alt="" >
+        <p class="text-base text-neutral-500">Kepala Sekolah</p>
+        <h1 class="font-bold text-xl">Drs. Lambas Pakpahan MM.</h1>
+    </div>
+
+
+    <div style="margin-top:5rem; width: 90%; justify-content:space-evenly" class="flex justify-evenly w-vw">
+      <div>
+        <img style="width: 15rem; height:15rem;" class="rounded-full" src="../../assets/dummy_pp.jpeg" alt="" >
+        <p class="text-base text-neutral-500">Jabatan/</p>
+        <h1 class="font-bold text-xl">Miss Jenny</h1>
+      </div>
+      <div>
+        <img style="width: 15rem; height:15rem;" class="rounded-full" src="../../assets/busuwarni.jpg" alt="" >
+        <p class="text-base text-neutral-500">Jabatan/</p>
+        <h1 class="font-bold text-xl">Bu Suwarni</h1>
+      </div>
+      <div>
+        <img style="width: 15rem; height:15rem;" class="rounded-full" src="../../assets/pausamn.JPG" alt="" >
+        <p class="text-base text-neutral-500">Jabatan/</p>
+        <h1 class="font-bold text-xl">Pak Usman</h1>
+      </div>
+    </div>
+    <div style="margin-top:5rem; width: 90%; justify-content:space-evenly" class="flex justify-evenly w-vw">
+      <div>
+        <img style="width: 15rem; height:15rem;" class="rounded-full" src="../../assets/bufadila.jpg" alt="" >
+        <p class="text-base text-neutral-500">Jabatan/</p>
+        <h1 class="font-bold text-xl">Bu Faradillah</h1>
+      </div>
+      <div>
+        <img style="width: 15rem; height:15rem;" class="rounded-full" src="../../assets/bumexi.jpg" alt="" >
+        <p class="text-base text-neutral-500">Jabatan/</p>
+        <h1 class="font-bold text-xl">Bu Mexi</h1>
+      </div>
+      <div>
+        <img style="width: 15rem; height:15rem;" class="rounded-full" src="../../assets/buumi.jpg" alt="" >
+        <p class="text-base text-neutral-500">Jabatan/</p>
+        <h1 class="font-bold text-xl">Bu Umi</h1>
+      </div>
+    </div>
+    <div style="margin-top:5rem; width: 90%; justify-content:space-evenly" class="flex justify-evenly w-vw">
+      <div>
+        <img style="width: 15rem; height:15rem;" class="rounded-full" src="../../assets/pasigit.JPG" alt="" >
+        <p class="text-base text-neutral-500">Jabatan/</p>
+        <h1 class="font-bold text-xl">Pak Sigit</h1>
+      </div>
+      <div>
+        <img style="width: 15rem; height:15rem;" class="rounded-full" src="../../assets/budwi.JPG" alt="" >
+        <p class="text-base text-neutral-500">Jabatan/</p>
+        <h1 class="font-bold text-xl">Bu Dwi</h1>
+      </div>
+      <div>
+        <img style="width: 15rem; height:15rem;" class="rounded-full" src="../../assets/panur.JPG" alt="" >
+        <p class="text-base text-neutral-500">Jabatan/</p>
+        <h1 class="font-bold text-xl">Pak Nur</h1>
+      </div>
+    </div>
+    <div style="margin-top:5rem; width: 90%; justify-content:space-evenly" class="flex justify-evenly w-vw">
+      <div>
+        <img style="width: 15rem; height:15rem;" class="rounded-full" src="../../assets/bunanda.JPG" alt="" >
+        <p class="text-base text-neutral-500">Jabatan/</p>
+        <h1 class="font-bold text-xl">Bu Nanda</h1>
+      </div>
+      <div>
+        <img style="width: 15rem; height:15rem;" class="rounded-full" src="../../assets/bufara.JPG" alt="" >
+        <p class="text-base text-neutral-500">Jabatan/</p>
+        <h1 class="font-bold text-xl">Bu Fara</h1>
+      </div>
+      <div>
+        <img style="width: 15rem; height:15rem;" class="rounded-full" src="../../assets/buajija.JPG" alt="" >
+        <p class="text-base text-neutral-500">Jabatan/</p>
+        <h1 class="font-bold text-xl">Bu Azizah</h1>
+      </div>
+    </div>
+    <div style="margin-top:5rem; width: 90%; justify-content:space-evenly" class="flex justify-evenly w-vw">
+      <div>
+        <img style="width: 15rem; height:15rem;" class="rounded-full" src="../../assets/parahmat.jfif" alt="" >
+        <p class="text-base text-neutral-500">Pak Rahmat/</p>
+        <h1 class="font-bold text-xl">Nama Guru</h1>
+      </div>
+      <div>
+        <img style="width: 15rem; height:15rem;" class="rounded-full" src="../../assets/pahadi.JPG" alt="" >
+        <p class="text-base text-neutral-500">Pak Hadi/</p>
+        <h1 class="font-bold text-xl">Nama Guru</h1>
+      </div>
+      <div>
+        <img style="width: 15rem; height:15rem;" class="rounded-full" src="../../assets/paipin.JPG" alt="" >
+        <p class="text-base text-neutral-500">Pak Arifin/</p>
+        <h1 class="font-bold text-xl">Nama Guru</h1>
+      </div>
+    </div>
+    <div style="margin-top:5rem; width: 90%; justify-content:space-evenly" class="flex justify-evenly w-vw">
+      <div>
+        <img style="width: 15rem; height:15rem;" class="rounded-full" src="../../assets/buanisa.JPG" alt="" >
+        <p class="text-base text-neutral-500">Jabatan/</p>
+        <h1 class="font-bold text-xl">Pak Anisa</h1>
+      </div>
+      <div>
+        <img style="width: 15rem; height:15rem;" class="rounded-full" src="../../assets/buangi.jpg" alt="" >
+        <p class="text-base text-neutral-500">Jabatan/</p>
+        <h1 class="font-bold text-xl">Bu Anggi</h1>
+      </div>
+      <div>
+        <img style="width: 15rem; height:15rem;" class="rounded-full" src="../../assets/gtq.JPG" alt="" >
+        <p class="text-base text-neutral-500">Jabatan/</p>
+        <h1 class="font-bold text-xl">Nama Guru</h1>
+      </div>
+    </div>
+    <div style="margin-top:5rem; width: 90%; justify-content:space-evenly" class="flex justify-evenly w-vw">
+      <div>
+        <img style="width: 15rem; height:15rem;" class="rounded-full" src="../../assets/padi.JPG" alt="" >
+        <p class="text-base text-neutral-500">Jabatan/</p>
+        <h1 class="font-bold text-xl">Pak Adi</h1>
+      </div>
+      <div>
+        <img style="width: 15rem; height:15rem;" class="rounded-full" src="../../assets/budalila.jpg" alt="" >
+        <p class="text-base text-neutral-500">Jabatan/</p>
+        <h1 class="font-bold text-xl">Bu Dalilah</h1>
+      </div>
+      <div>
+        <img style="width: 15rem; height:15rem;" class="rounded-full" src="../../assets/paarif.jpg" alt="" >
+        <p class="text-base text-neutral-500">Jabatan/</p>
+        <h1 class="font-bold text-xl">Pak Arif</h1>
+      </div>
+    </div>
+    <div style="margin-top:5rem; width: 90%; justify-content:space-evenly" class="flex justify-evenly w-vw">
+      <div>
+        <img style="width: 15rem; height:15rem;" class="rounded-full" src="../../assets/dummy_pp.jpeg" alt="" >
+        <p class="text-base text-neutral-500">Jabatan/</p>
+        <h1 class="font-bold text-xl">Nama Guru</h1>
+      </div>
+      <div>
+        <img style="width: 15rem; height:15rem;" class="rounded-full" src="../../assets/dummy_pp.jpeg" alt="" >
+        <p class="text-base text-neutral-500">Jabatan/</p>
+        <h1 class="font-bold text-xl">Nama Guru</h1>
+      </div>
+      <div>
+        <img style="width: 15rem; height:15rem;" class="rounded-full" src="../../assets/dummy_pp.jpeg" alt="" >
+        <p class="text-base text-neutral-500">Jabatan/</p>
+        <h1 class="font-bold text-xl">Nama Guru</h1>
+      </div>
+    </div>
+    <div style="margin-top:5rem; width: 90%; justify-content:space-evenly" class="flex justify-evenly w-vw">
+      <div>
+        <img style="width: 15rem; height:15rem;" class="rounded-full" src="../../assets/dummy_pp.jpeg" alt="" >
+        <p class="text-base text-neutral-500">Jabatan/</p>
+        <h1 class="font-bold text-xl">Nama Guru</h1>
+      </div>
+      <div>
+        <img style="width: 15rem; height:15rem;" class="rounded-full" src="../../assets/dummy_pp.jpeg" alt="" >
+        <p class="text-base text-neutral-500">Jabatan/</p>
+        <h1 class="font-bold text-xl">Nama Guru</h1>
+      </div>
+      <div>
+        <img style="width: 15rem; height:15rem;" class="rounded-full" src="../../assets/dummy_pp.jpeg" alt="" >
+        <p class="text-base text-neutral-500">Jabatan/</p>
+        <h1 class="font-bold text-xl">Nama Guru</h1>
+      </div>
+    </div>
+    <div style="margin-top:5rem; width: 90%; justify-content:space-evenly" class="flex justify-evenly w-vw">
+      <div>
+        <img style="width: 15rem; height:15rem;" class="rounded-full" src="../../assets/dummy_pp.jpeg" alt="" >
+        <p class="text-base text-neutral-500">Jabatan/</p>
+        <h1 class="font-bold text-xl">Nama Guru</h1>
+      </div>
+      <div>
+        <img style="width: 15rem; height:15rem;" class="rounded-full" src="../../assets/dummy_pp.jpeg" alt="" >
+        <p class="text-base text-neutral-500">Jabatan/</p>
+        <h1 class="font-bold text-xl">Nama Guru</h1>
+      </div>
+      <div>
+        <img style="width: 15rem; height:15rem;" class="rounded-full" src="../../assets/dummy_pp.jpeg" alt="" >
+        <p class="text-base text-neutral-500">Jabatan/</p>
+        <h1 class="font-bold text-xl">Nama Guru</h1>
+      </div>
+    </div>
+    <div style="margin-top:5rem; width: 90%; justify-content:space-evenly" class="flex justify-evenly w-vw">
+      <div>
+        <img style="width: 15rem; height:15rem;" class="rounded-full" src="../../assets/dummy_pp.jpeg" alt="" >
+        <p class="text-base text-neutral-500">Jabatan/</p>
+        <h1 class="font-bold text-xl">Nama Guru</h1>
+      </div>
+      <div>
+        <img style="width: 15rem; height:15rem;" class="rounded-full" src="../../assets/dummy_pp.jpeg" alt="" >
+        <p class="text-base text-neutral-500">Jabatan/</p>
+        <h1 class="font-bold text-xl">Nama Guru</h1>
+      </div>
+      <div>
+        <img style="width: 15rem; height:15rem;" class="rounded-full" src="../../assets/dummy_pp.jpeg" alt="" >
+        <p class="text-base text-neutral-500">Jabatan/</p>
+        <h1 class="font-bold text-xl">Nama Guru</h1>
+      </div>
+    </div>
+    <div style="margin-top:5rem; width: 90%; justify-content:space-evenly" class="flex justify-evenly w-vw">
+      <div>
+        <img style="width: 15rem; height:15rem;" class="rounded-full" src="../../assets/dummy_pp.jpeg" alt="" >
+        <p class="text-base text-neutral-500">Jabatan/</p>
+        <h1 class="font-bold text-xl">Nama Guru</h1>
+      </div>
+      <div>
+        <img style="width: 15rem; height:15rem;" class="rounded-full" src="../../assets/dummy_pp.jpeg" alt="" >
+        <p class="text-base text-neutral-500">Jabatan/</p>
+        <h1 class="font-bold text-xl">Nama Guru</h1>
+      </div>
+      <div>
+        <img style="width: 15rem; height:15rem;" class="rounded-full" src="../../assets/dummy_pp.jpeg" alt="" >
+        <p class="text-base text-neutral-500">Jabatan/</p>
+        <h1 class="font-bold text-xl">Nama Guru</h1>
+      </div>
     </div>
 </section>
 
 
-
-<section class=" mt-[8rem]">
-    <h1 class="text-[4rem] ml-[4rem] font-bold text-white">Pengurus</h1>
-<div class="flex justify-around m-11">
-        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <a href="#">
-                <img class="rounded-t-lg " src="../../assets/dummy_pp.jpeg" alt="" />
-            </a>
-            <div class="p-5">
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Kepala Sekolah</p>
-                <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-                </a>
-            </div>
+    <footer class="w-vw mt-20 bg-gray-600 justify-center flex">
+        <div class="flex flex-row gap-8 my-10">
+        <div class="flex">
+        <img class="h-[24px] w-[24px]" src="../../assets/instagram.png" alt="">
+        <a href="#" class="hover:text-sky-950">Instagram</a>
         </div>
-        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <a href="#">
-                <img class="rounded-t-lg " src="../../assets/dummy_pp.jpeg" alt="" />
-            </a>
-            <div class="p-5">
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Kepala Sekolah</p>
-                <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-                </a>
-            </div>
+        <div class="flex">
+          <img class="h-[24px] w-[24px]" src="../../assets/mail.svg" alt="">
+          <p>dummy@gamil.com</p>
         </div>
-        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <a href="#">
-                <img class="rounded-t-lg " src="../../assets/dummy_pp.jpeg" alt="" />
-            </a>
-            <div class="p-5">
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Kepala Sekolah</p>
-                <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-                </a>
-            </div>
+        <div class="flex">
+          <img class="h-[24px] w-[24px]" src="../../assets/map.svg" alt="">
+          <a href="https://maps.app.goo.gl/qQ4ozzoSmAzBc4f79" class="hover:text-sky-950 text-warp">Jl. Dr. KRT Radjiman Widyodiningrat Jl. Kp. Pulo Jahe,<br> Jatinegara, Kec. Cakung, Kota Jakarta Timur,<br> Daerah Khusus Ibukota Jakarta 13930</a>
         </div>
-    </div>
-</section>
-
-
-<section class=" mt-[8rem]">
-    <h1 class="text-[4rem] ml-[4rem] font-bold text-white">Guru Kompetensi Rekayasa Perangkat Lunak</h1>
-<div class="flex justify-around m-11">
-        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <a href="#">
-                <img class="rounded-t-lg " src="../../assets/dummy_pp.jpeg" alt="" />
-            </a>
-            <div class="p-5">
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Kepala Sekolah</p>
-                <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-                </a>
-            </div>
         </div>
-        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <a href="#">
-                <img class="rounded-t-lg " src="../../assets/dummy_pp.jpeg" alt="" />
-            </a>
-            <div class="p-5">
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Kepala Sekolah</p>
-                <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-                </a>
-            </div>
-        </div>
-        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <a href="#">
-                <img class="rounded-t-lg " src="../../assets/dummy_pp.jpeg" alt="" />
-            </a>
-            <div class="p-5">
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Kepala Sekolah</p>
-                <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class=" mt-[8rem]">
-    <h1 class="text-[4rem] ml-[4rem] font-bold text-white">Guru Kompetensi Animasi</h1>
-<div class="flex justify-around m-11">
-        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <a href="#">
-                <img class="rounded-t-lg " src="../../assets/dummy_pp.jpeg" alt="" />
-            </a>
-            <div class="p-5">
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Kepala Sekolah</p>
-                <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-                </a>
-            </div>
-        </div>
-        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <a href="#">
-                <img class="rounded-t-lg " src="../../assets/dummy_pp.jpeg" alt="" />
-            </a>
-            <div class="p-5">
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Kepala Sekolah</p>
-                <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-                </a>
-            </div>
-        </div>
-        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <a href="#">
-                <img class="rounded-t-lg " src="../../assets/dummy_pp.jpeg" alt="" />
-            </a>
-            <div class="p-5">
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Kepala Sekolah</p>
-                <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class=" mt-[8rem]">
-    <h1 class="text-[4rem] ml-[4rem] font-bold text-white">Guru Kompetensi Desain Komunikasi Visual</h1>
-<div class="flex justify-around m-11">
-        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <a href="#">
-                <img class="rounded-t-lg " src="../../assets/dummy_pp.jpeg" alt="" />
-            </a>
-            <div class="p-5">
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Kepala Sekolah</p>
-                <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-                </a>
-            </div>
-        </div>
-        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <a href="#">
-                <img class="rounded-t-lg " src="../../assets/dummy_pp.jpeg" alt="" />
-            </a>
-            <div class="p-5">
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Kepala Sekolah</p>
-                <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-                </a>
-            </div>
-        </div>
-        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <a href="#">
-                <img class="rounded-t-lg " src="../../assets/dummy_pp.jpeg" alt="" />
-            </a>
-            <div class="p-5">
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Kepala Sekolah</p>
-                <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section class=" mt-[8rem]">
-    <h1 class="text-[4rem] ml-[4rem] font-bold text-white">Guru Umum</h1>
-<div class="flex justify-around m-11">
-        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <a href="#">
-                <img class="rounded-t-lg " src="../../assets/dummy_pp.jpeg" alt="" />
-            </a>
-            <div class="p-5">
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Kepala Sekolah</p>
-                <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-                </a>
-            </div>
-        </div>
-        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <a href="#">
-                <img class="rounded-t-lg " src="../../assets/dummy_pp.jpeg" alt="" />
-            </a>
-            <div class="p-5">
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Kepala Sekolah</p>
-                <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-                </a>
-            </div>
-        </div>
-        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <a href="#">
-                <img class="rounded-t-lg " src="../../assets/dummy_pp.jpeg" alt="" />
-            </a>
-            <div class="p-5">
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Kepala Sekolah</p>
-                <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
+    </footer>
 
 
 <script src="../../../../node_modules/flowbite/dist/flowbite.js"></script>
